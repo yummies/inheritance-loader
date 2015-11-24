@@ -1,0 +1,52 @@
+{
+  "name": "@yummies/inheritance-loader",
+  "version": "0.0.1",
+  "description": "Multilayer components inheritance for Yummies via webpack loader",
+  "keywords": [ "yummies", "webpack", "loader" ],
+  "homepage": "https://github.com/yummies/inheritance-loader",
+  "repository": "yummies/inheritance-loader",
+  "contributors": [
+    "Kir Belevich <kir@soulshine.in> (https://github.com/deepsweet)",
+    "Denis Koltsov <iam@mistadikay.com> (https://github.com/mistadikay)"
+  ],
+  "main": "build/index.js",
+  "files": [
+    "build/",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "babel-runtime": "5.8.x",
+    "falafel": "1.2.x",
+    "loader-utils": "0.2.x",
+    "js-yaml": "3.4.x"
+  },
+  "devDependencies": {
+    "husky": "0.10.x",
+    "rimraf": "2.4.x",
+    "babel": "5.8.x",
+    "babel-core": "5.8.x",
+    "eslint": "1.10.x",
+    "babel-eslint": "4.1.x",
+    "eslint-plugin-babel": "2.2.x"
+  },
+  "peerDependencies": {
+    "webpack": "*"
+  },
+  "scripts": {
+    "prebuild": "rimraf build/",
+    "build": "babel lib/ -d build/",
+    "dev": "npm run build -- -w",
+
+    "lint": "eslint lib/",
+    "test": "npm run lint",
+
+    "travis": "npm run lint",
+    "prepush": "npm test",
+    "prepublish": "npm run build"
+  },
+  "engines": {
+    "node": ">=0.12.0",
+    "npm": ">=2.7.0"
+  },
+  "license": "MIT"
+}
