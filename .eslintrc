@@ -193,14 +193,7 @@
     eol-last: 2
     func-names: 0
     func-style: 0 # ?
-    id-length:
-      - 2
-      - min: 2
-        max: 35
-        exceptions:
-          - "i"
-          - "e"
-          - "t"
+    id-length: 0
     lines-around-comment: 0
     key-spacing:
       - 2
