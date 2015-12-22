@@ -1,6 +1,6 @@
 {
   "name": "@yummies/inheritance-loader",
-  "version": "3.1.2",
+  "version": "3.2.0",
   "description": "Multilayer components inheritance for Yummies via webpack loader",
   "keywords": [ "yummies", "webpack", "loader" ],
   "homepage": "https://github.com/yummies/inheritance-loader",
